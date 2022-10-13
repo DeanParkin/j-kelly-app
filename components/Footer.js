@@ -30,8 +30,8 @@ const Footer = () => {
   return (
     <>
       <footer className="mt-3">
-        <NewsLetter />
-        <div className="container footer-container text-light">
+        {/* <NewsLetter /> */}
+        <div className="container footer-container text-dark">
           <div className="row my-4 fs-5">
             <div className="col-md-4">
               <div className="opening-hours-container text-uppercase">
@@ -155,7 +155,7 @@ const Footer = () => {
           <div className="container">
             <div className="copyright-container justify-content-center text-center fs-6">
               <p className="copyright mb-1">
-                <span className="text-light">
+                <span className="text-dark">
                   &copy; 2020 - {new Date().getFullYear()} THE ANCHOR. ALL
                   RIGHTS RESERVED.
                 </span>

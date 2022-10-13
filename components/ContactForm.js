@@ -41,7 +41,7 @@ export default function ContactForm() {
       <div className="text-center">
         <h2 className="h2 text-primary baskerville-font">Contact Us</h2>
         <div className="d-flex justify-content-center">
-          <p className="text-light text-container text-wrap">
+          <p className="text-dark text-container text-wrap">
             If you would like to ask a question or book a table, then get in
             touch, either send us an email to{" "}
             <a href="mailto:Julian@theanchordigbeth.com">
@@ -117,7 +117,7 @@ export default function ContactForm() {
             </span>
           </div>
           <div className="justify-content-end d-flex d-grid">
-            <button type="submit" className="btn mt-2">
+            <button type="submit" className="btn btn-primary mt-2">
               Submit
             </button>
           </div>

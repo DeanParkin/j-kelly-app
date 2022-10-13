@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "../components/Footer";
-import logo from "../public/imgs/anchor-nav-logo-small.png";
+import logo from "../public/imgs/j_kelly_Nav_logo.png";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 // TODO - add the navbar links
@@ -18,12 +18,12 @@ export default function Nav({ children }) {
       ? { class: "nav-link active", aria: "page", href: "/" }
       : { class: "nav-link", aria: "", href: "/" };
 
-  let drinks =
-    route == "drinks"
+  let about =
+    route == "about"
       ? { class: "nav-link active", aria: "page", href: "/" }
       : { class: "nav-link", aria: "", href: "/" };
-  let events =
-    route == "events"
+  let services =
+    route == "services"
       ? { class: "nav-link active", aria: "page", href: "/" }
       : { class: "nav-link", aria: "", href: "/" };
   let contact =
@@ -32,10 +32,6 @@ export default function Nav({ children }) {
       : { class: "nav-link", aria: "", href: "/" };
   let gallery =
     route == "gallery"
-      ? { class: "nav-link active", aria: "page", href: "/" }
-      : { class: "nav-link", aria: "", href: "/" };
-  let giftvoucher =
-    route == "giftvoucher"
       ? { class: "nav-link active", aria: "page", href: "/" }
       : { class: "nav-link", aria: "", href: "/" };
 
@@ -92,18 +88,18 @@ export default function Nav({ children }) {
 
   return (
     <>
-      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <div className="me-2" style={{ height: "60px" }}>
             <h1 className="m-0">
-              <span hidden={true}>The Anchor Digbeth, Birmingham</span>
+              <span hidden={true}>J Kelly Gardening</span>
             </h1>
             <Link href="/">
-              <div style={{ width: "60px", height: "60px" }}>
+              <div style={{ width: "100px", height: "60px" }}>
                 <Image
                   src={logo}
-                  alt="The Anchor Digbeth"
-                  width={120}
+                  alt="J Kelly Gardening"
+                  width={200}
                   height={120}
                   className="navbar-brand"
                   priority={true}
@@ -144,14 +140,26 @@ export default function Nav({ children }) {
                 className="nav-item me-2"
                 //data-bs-toggle="collapse"
               >
-                <Link href="/drinks">
+                <Link href="/about">
                   <a
-                    className={drinks.class}
+                    className={about.class}
                     onClick={linkClick}
                     //aria-current={home.aria}
                     //aria-current="page"
                   >
-                    Drinks
+                    about
+                  </a>
+                </Link>
+              </li>
+              <li className="nav-item me-2">
+                <Link href="/services">
+                  <a
+                    className={services.class}
+                    onClick={linkClick}
+                    //aria-current={home.aria}
+                    //aria-current="page"
+                  >
+                    services
                   </a>
                 </Link>
               </li>
@@ -164,30 +172,6 @@ export default function Nav({ children }) {
                     //aria-current="page"
                   >
                     Gallery
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item me-2">
-                <Link href="/events">
-                  <a
-                    className={events.class}
-                    onClick={linkClick}
-                    //aria-current={home.aria}
-                    //aria-current="page"
-                  >
-                    Events
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item me-2">
-                <Link href="/giftvoucher">
-                  <a
-                    className={giftvoucher.class}
-                    onClick={linkClick}
-                    //aria-current={home.aria}
-                    //aria-current="page"
-                  >
-                    gift voucher
                   </a>
                 </Link>
               </li>

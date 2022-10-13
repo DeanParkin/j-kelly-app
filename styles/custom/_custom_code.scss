@@ -16,82 +16,49 @@
 //Globals
 //================================================
 
-.baskerville-font {
-  font-family: "Libre Baskerville", serif;
-}
-
-.oswald-font {
-  font-family: "Proxima Bold", sans-serif;
-}
-
-//Overide btn Font
-.btn {
-  font-family: "Proxima Bold", sans-serif;
-  text-transform: uppercase;
-}
-
-button.btn {
-  background-color: $primary;
-  color: #000;
-  border-color: $primary;
-  --bs-btn-hover-border-color: $primary;
-  // &:hover {
-  //   background-color: #000;
-  //   color: $primary;
-  // }
-  :not(.btn-check) + &:hover,
-  &:first-child:hover {
-    background-color: #000;
-    color: $primary;
-    border-color: $primary;
-  }
-}
-
-.text-container {
-  max-width: 700px;
-}
+// button.btn {
+//   background-color: $primary;
+//   color: #000;
+//   border-color: $primary;
+//   --bs-btn-hover-border-color: $primary;
+//   // &:hover {
+//   //   background-color: #000;
+//   //   color: $primary;
+//   // }
+//   :not(.btn-check) + &:hover,
+//   &:first-child:hover {
+//     background-color: #000;
+//     color: $primary;
+//     border-color: $primary;
+//   }
+// }
 
 //================================================
 //Newsletter
 //================================================
 
-div.input-group input.newsletter-input {
-  border-radius: 0;
-  border-color: #000;
-}
-div div.input-group input.newsletter-submit.btn {
-  background-color: #000;
-  color: $primary;
-  border-radius: 0;
-  border-color: #000;
-  &:hover {
-    background-color: $primary;
-    color: #000;
-  }
-}
-
 //================================================
 //Navbar
 //================================================
 
-.navbar-nav > li > a.nav-link {
-  font-family: "Proxima Bold", sans-serif;
-  font-size: 25px;
-  //letter-spacing: 0.1em;
-  font-weight: 700;
-  &:hover {
-    color: #000;
-  }
-}
+// .navbar-nav > li > a.nav-link {
+//   font-family: "Proxima Bold", sans-serif;
+//   font-size: 25px;
+//   //letter-spacing: 0.1em;
+//   font-weight: 700;
+//   &:hover {
+//     color: #000;
+//   }
+// }
 
 //================================================
 //Contact Form
 //================================================
-.contact-form {
-  width: 100%;
-  margin-top: 20px;
-  max-width: 700px;
-}
+// .contact-form {
+//   width: 100%;
+//   margin-top: 20px;
+//   max-width: 700px;
+// }
 
 //================================================
 //Footer
@@ -144,9 +111,9 @@ div div.input-group input.newsletter-submit.btn {
   transition: all 0.35s ease-in-out;
 }
 .social-link {
-  color: #fff;
+  color: $primary;
   &:hover {
-    color: $primary;
+    color: $dark;
   }
 }
 
@@ -277,7 +244,10 @@ div div.input-group input.newsletter-submit.btn {
 //================================================
 
 //fixes the displaying aspect ratio of the image
-.card-img {
-  width: 100%;
-  object-fit: cover;
-}
+// .card-img {
+//   width: 100%;
+//   object-fit: cover;
+// }
+// .card {
+//   --bs-card-color: $dark;
+// }
