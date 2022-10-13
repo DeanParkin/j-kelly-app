@@ -214,7 +214,7 @@
 .nav-icon div,
 .nav-icon:after,
 .nav-icon:before {
-  background-color: #000;
+  background-color: $primary;
   border-radius: 3px;
   content: "";
   display: block;
@@ -223,7 +223,7 @@
   @include animate(all, 400ms);
 
   &:hover {
-    color: #000;
+    color: $primary;
   }
 }
 

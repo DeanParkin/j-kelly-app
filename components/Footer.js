@@ -82,12 +82,12 @@ const Footer = () => {
             <div className="col-md-4 p-3"></div>
 
             {/* <div className="col-md-4 address-container"> */}
-            <address className="col-md-4 address-container m-0">
+            {/* <address className="col-md-4 address-container m-0">
               THE ANCHOR, <br />
               308 BRADFORD STREET, <br />
               BIRMINGHAM, <br />
               B5 6ET
-            </address>
+            </address> */}
             {/* </div> */}
           </div>
           <div className="d-flex justify-content-center">
@@ -156,7 +156,7 @@ const Footer = () => {
             <div className="copyright-container justify-content-center text-center fs-6">
               <p className="copyright mb-1">
                 <span className="text-dark">
-                  &copy; 2020 - {new Date().getFullYear()} THE ANCHOR. ALL
+                  &copy; {new Date().getFullYear()} J KELLY GARDENING. ALL
                   RIGHTS RESERVED.
                 </span>
               </p>
@@ -178,7 +178,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="d-flex justify-content-center">
-              <p className="text-center text-light pb-4">
+              <p className="text-center text-dark pb-4">
                 Website developed by <a href="#">Plan;D</a>.
               </p>
             </div>
