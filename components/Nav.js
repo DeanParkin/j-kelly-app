@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 // TODO - add the navbar links
 // TODO - add the navbar logo
+// TODO - update the h1 tag
 
 export default function Nav({ children }) {
   const route = useRouter().route.slice(1);
@@ -13,7 +14,7 @@ export default function Nav({ children }) {
 
   const [navOpen, setNavOpen] = useState(false);
 
-  const navLinks = [
+  const navItems = [
     { name: "home", href: "/" },
     { name: "about", href: "/about" },
     { name: "gallery", href: "/gallery" },
@@ -110,7 +111,7 @@ export default function Nav({ children }) {
           </button>
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
-              {navLinks.map((link) => {
+              {navItems.map((link) => {
                 let x = link.href.slice(1);
                 let activeClass =
                   x == route
