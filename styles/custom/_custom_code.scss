@@ -53,10 +53,10 @@
 
 .navbar-nav > li > a.nav-link {
   font-family: "Proxima Bold";
-  color: rgba(0, 127, 0, 0.6);
-  &:hover {
-    color: rgba(0, 127, 0, 0.8);
-  }
+  // color: rgba(0, 127, 0, 0.6);
+  // &:hover {
+  //   color: rgba(0, 127, 0, 0.8);
+  // }
   &.active {
     color: rgba(0, 127, 0, 1);
   }
