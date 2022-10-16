@@ -10,6 +10,24 @@ import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 
 const Footer = () => {
+  const socialIcons = [
+    {
+      name: "facebook link",
+      href: "#",
+      faIcon: faFacebook,
+    },
+    {
+      name: "instagram link",
+      href: "#",
+      faIcon: faInstagramSquare,
+    },
+    {
+      name: "twitter link",
+      href: "#",
+      faIcon: faTwitter,
+    },
+  ];
+
   const router = useRouter();
   let url = `${router.asPath}`;
 
@@ -33,43 +51,25 @@ const Footer = () => {
         {/* <NewsLetter /> */}
         <div className="social-container border-top border-primary">
           <div className="container d-flex justify-content-around fs-3 align-items-center py-4">
-            <a
-              href="https://www.facebook.com/TheAnchorDigbeth/"
-              target="_blank"
-              className="social-link"
-              rel="noopener noreferrer"
-              aria-label="Facebook Link"
-            >
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className="social-icon"
-                size="sm"
-              ></FontAwesomeIcon>
-            </a>
-            <a
-              href="https://www.instagram.com/theanchordigbeth1797"
-              aria-label="Instagram Link"
-              className="social-link"
-            >
-              <FontAwesomeIcon
-                icon={faInstagramSquare}
-                className="social-icon"
-                id="ig-link"
-                size="sm"
-              ></FontAwesomeIcon>
-            </a>
-            <a
-              href="https://twitter.com/anchordigbeth"
-              id="tw-link"
-              className="social-link"
-              aria-label="Twitter Link"
-            >
-              <FontAwesomeIcon
-                icon={faTwitter}
-                className="social-icon"
-                size="sm"
-              ></FontAwesomeIcon>
-            </a>
+            {socialIcons.map((icon) => {
+              return (
+                <>
+                  <a
+                    href={icon.href}
+                    target="_blank"
+                    className="social-link"
+                    rel="noopener noreferrer"
+                    aria-label={icon.name}
+                  >
+                    <FontAwesomeIcon
+                      icon={icon.faIcon}
+                      className="social-icon"
+                      size="sm"
+                    ></FontAwesomeIcon>
+                  </a>
+                </>
+              );
+            })}
             <div
               onClick={() => {
                 shareData();
