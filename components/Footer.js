@@ -17,8 +17,8 @@ const Footer = () => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: `The Anchor, Digbeth`,
-          text: `The Anchor, Digbeth`,
+          title: `J Kelly Gardening`,
+          text: `J Kelly Gardening`,
           url: `${url}`,
         });
       } catch (error) {
@@ -31,72 +31,6 @@ const Footer = () => {
     <>
       <footer className="mt-3">
         {/* <NewsLetter /> */}
-        <div className="container footer-container text-dark">
-          <div className="row my-4 fs-5">
-            <div className="col-md-4">
-              <div className="opening-hours-container text-uppercase">
-                <div className="opening-hours">
-                  <p className="opening-hours-day">Monday</p>
-                  <div className="opening-hours-dots"></div>
-                  <p className="opening-hours-time">12:00 - 23:00</p>
-                </div>
-
-                <div className="opening-hours">
-                  <p className="opening-hours-day">Tuesday</p>
-                  <div className="opening-hours-dots"></div>
-                  <p className="opening-hours-time">12:00 - 23:00</p>
-                </div>
-
-                <div className="opening-hours">
-                  <p className="opening-hours-day">Wednesday</p>
-                  <div className="opening-hours-dots"></div>
-                  <p className="opening-hours-time">12:00 - 23:00</p>
-                </div>
-
-                <div className="opening-hours">
-                  <p className="opening-hours-day">Thursday</p>
-                  <div className="opening-hours-dots"></div>
-                  <p className="opening-hours-time">12:00 - 23:00</p>
-                </div>
-
-                <div className="opening-hours">
-                  <p className="opening-hours-day">Friday</p>
-                  <span className="opening-hours-dots"></span>
-                  <p className="opening-hours-time">12:00 - 00:00</p>
-                </div>
-
-                <div className="opening-hours">
-                  <p className="opening-hours-day">Saturday</p>
-                  <div className="opening-hours-dots"></div>
-                  <p className="opening-hours-time">12:00 - 00:00</p>
-                </div>
-
-                <div className="opening-hours">
-                  <p className="opening-hours-day">Sunday</p>
-                  <div className="opening-hours-dots"></div>
-                  <p className="opening-hours-time">12:00 - 23:00</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 p-3"></div>
-
-            {/* <div className="col-md-4 address-container"> */}
-            {/* <address className="col-md-4 address-container m-0">
-              THE ANCHOR, <br />
-              308 BRADFORD STREET, <br />
-              BIRMINGHAM, <br />
-              B5 6ET
-            </address> */}
-            {/* </div> */}
-          </div>
-          <div className="d-flex justify-content-center">
-            <p className="text-center fs-5">
-              Please let us know how we&apos;re doing with a{" "}
-              <a href="https://g.page/TheAnchorDigbeth?share">review</a>
-            </p>
-          </div>
-        </div>
         <div className="social-container border-top border-primary">
           <div className="container d-flex justify-content-around fs-3 align-items-center py-4">
             <a

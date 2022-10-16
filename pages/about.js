@@ -1,5 +1,5 @@
 import React from "react";
-import Drinks from "../components/Drinks";
+import AboutUsComp from "../components/AboutUsComp";
 import SEO from "../components/SEO";
 
 const drinks = () => {
@@ -9,7 +9,7 @@ const drinks = () => {
         title="Drinks"
         description="Real and craft ales, wines, spirits, and cocktails. Traditional Thinking…Modern Drinking…"
       />
-      <Drinks />
+      <AboutUsComp />
     </>
   );
 };
