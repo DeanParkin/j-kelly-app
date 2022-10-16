@@ -24,8 +24,12 @@ export default function Home() {
         </div>
         <div className="d-flex justify-content-center">
           <p className="my-2 text-container">
-            Commercial and domestic gardening and landscaping services. Open
-            from 08:00am
+            J Kelly works 7 days a week to bring you top quality Commercial and
+            domestic, gardening and landscaping services. Our strong reputation
+            is built on our dedication to customer satisfaction and our aim is
+            to offer a reasonably priced services to suit the needs you have.
+            <br /> We exclusively use eco-friendly methods and materials because
+            we care as much about the environment. Open from 08:00am
           </p>
         </div>
       </header>

@@ -42,12 +42,7 @@ export default function ContactForm() {
         <h2 className="h2 text-primary baskerville-font">Contact Us</h2>
         <div className="d-flex justify-content-center">
           <p className="text-dark text-container text-wrap">
-            If you would like to ask a question or book a table, then get in
-            touch, either send us an email to{" "}
-            <a href="mailto:Julian@theanchordigbeth.com">
-              Julian@theanchordigbeth.com
-            </a>
-            , contact via social media or use the form provided below.
+            Contact us today for a free quote
           </p>
         </div>
       </div>
