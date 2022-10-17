@@ -63,6 +63,8 @@ export default function ServicesComp() {
                       src={service.image}
                       className="card-img-top"
                       alt="..."
+                      width={500}
+                      height={400}
                     />
                     <div className="card-body">
                       <p className="h4 card-title">{service.name}</p>
