@@ -37,7 +37,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="container pt-3 mb-3">
+    <section className="container pt-3 mb-3" id="contact">
       <div className="text-center">
         <h2 className="h1 text-primary baskerville-font">Contact Us</h2>
         <div className="d-flex justify-content-center">

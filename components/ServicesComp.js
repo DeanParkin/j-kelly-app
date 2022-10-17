@@ -64,11 +64,10 @@ export default function ServicesComp() {
                       <p className="h4 card-title">{service.name}</p>
                       <ul className="card-text">
                         {service.description.map((item) => {
-                          console.log(item.key);
                           return <li key={item.key}>{item.item}</li>;
                         })}
                       </ul>
-                      <a href="#" className="btn btn-primary">
+                      <a href="#contact" className="btn btn-primary">
                         Details
                       </a>
                     </div>
