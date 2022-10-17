@@ -63,7 +63,7 @@ export default function ContactForm() {
                 <label htmlFor="name">Name</label>
                 <input
                   type="text"
-                  className={`form-control ${
+                  className={`form-control border-primary ${
                     errors.contactName ? "border-danger" : ""
                   }`}
                   id="name"
@@ -80,7 +80,7 @@ export default function ContactForm() {
                 <label htmlFor="email">Email</label>
                 <input
                   type="text"
-                  className={`form-control ${
+                  className={`form-control border-primary ${
                     errors.contactEmail ? "border-danger" : ""
                   }`}
                   id="email"
@@ -103,7 +103,7 @@ export default function ContactForm() {
               <div className="form-group">
                 <label htmlFor="message">Message</label>
                 <textarea
-                  className={`form-control ${
+                  className={`form-control border-primary ${
                     errors.contactMessage ? "border-danger" : ""
                   }`}
                   id="message"
