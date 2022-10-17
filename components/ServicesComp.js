@@ -67,7 +67,7 @@ export default function ServicesComp() {
                           return <li key={item.key}>{item.item}</li>;
                         })}
                       </ul>
-                      <a href="#contact" className="btn btn-primary">
+                      <a href="#contactForm" className="btn btn-primary">
                         Details
                       </a>
                     </div>

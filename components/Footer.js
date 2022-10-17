@@ -98,7 +98,7 @@ const Footer = () => {
                 </span>
               </p>
               <a
-                href="https://www.theanchordigbeth.co.uk/privacy-policy"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="privacy-policy-link px-3 mb-3"
@@ -106,7 +106,7 @@ const Footer = () => {
                 Privacy Policy
               </a>
               <a
-                href="https://www.theanchordigbeth.co.uk/privacy-policy"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="privacy-policy-link mb-3"
