@@ -20,13 +20,14 @@ export default function Gallery() {
     <>
       <SEO
         title="Gallery"
-        description="The Anchor, Digbeth is a place of comfort to enjoy real ale, ciders, craft beers, wine, spirits and even cocktails, modern drinking in a traditional boozer."
+        description="J Kelly Gardening, Gallery Posts and images"
       />
       {/* <div className="container text-center pt-3">
         <h2 className="h2 text-primary baskerville-font">Gallery</h2>
       </div> */}
       <div className="container text-center pt-3">
-        <h2 className="h2 text-primary baskerville-font">Gallery</h2>
+        <h2 className="h1 text-primary baskerville-font">Gallery</h2>
+        <p>Need Instagram Account</p>
       </div>
       <div className="container mt-4">
         <div className="row">
@@ -56,9 +57,9 @@ export default function Gallery() {
         {/* <button className="btn me-2" onClick={loadClick}>
           Load more
         </button> */}
-        <a href="https://www.instagram.com/theanchordigbeth1797/">
+        {/* <a href="https://www.instagram.com/theanchordigbeth1797/">
           <button className="btn">go to instagram</button>
-        </a>
+        </a> */}
       </div>
     </>
   );

@@ -17,7 +17,7 @@ export default function Home() {
       <header className="text-dark text-center container pt-3">
         <h2 className="fs-5 baskerville-font">
           Welcome To <br />
-          <span className="h2 text-primary">J Kelly Gardening</span>
+          <span className="h1 text-primary">J Kelly Gardening</span>
         </h2>
         <div className="d-flex justify-content-center">
           <p className="h2 text-primary baskerville-font"></p>

@@ -15,16 +15,19 @@ const Footer = () => {
       name: "facebook link",
       href: "#",
       faIcon: faFacebook,
+      key: 321,
     },
     {
       name: "instagram link",
       href: "#",
       faIcon: faInstagramSquare,
+      key: 322,
     },
     {
       name: "twitter link",
       href: "#",
       faIcon: faTwitter,
+      key: 323,
     },
   ];
 
@@ -53,7 +56,7 @@ const Footer = () => {
           <div className="container d-flex justify-content-around fs-3 align-items-center py-4">
             {socialIcons.map((icon) => {
               return (
-                <>
+                <React.Fragment key={icon.key}>
                   <a
                     href={icon.href}
                     target="_blank"
@@ -67,7 +70,7 @@ const Footer = () => {
                       size="sm"
                     ></FontAwesomeIcon>
                   </a>
-                </>
+                </React.Fragment>
               );
             })}
             <div

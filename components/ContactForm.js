@@ -39,11 +39,11 @@ export default function ContactForm() {
   return (
     <section className="container pt-3 mb-3">
       <div className="text-center">
-        <h2 className="h2 text-primary baskerville-font">Contact Us</h2>
+        <h2 className="h1 text-primary baskerville-font">Contact Us</h2>
         <div className="d-flex justify-content-center">
           <p className="text-dark text-container text-wrap">
             Contact us today for a free quote, calls available everyday between
-            8:00 am - 9:00pm on <a href="tel:+07718620226">07718620226</a>
+            8:00 am - 9:00pm on <a href="tel:+447718620226">07718620226</a>
           </p>
         </div>
       </div>

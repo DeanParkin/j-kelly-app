@@ -15,11 +15,11 @@ export default function Nav({ children }) {
   const [navOpen, setNavOpen] = useState(false);
 
   const navItems = [
-    { name: "home", href: "/" },
-    { name: "about", href: "/about" },
-    { name: "gallery", href: "/gallery" },
-    { name: "services", href: "/services" },
-    { name: "contact", href: "/contact" },
+    { name: "home", href: "/", key: 420 },
+    { name: "about", href: "/about", key: 421 },
+    { name: "gallery", href: "/gallery", key: 422 },
+    { name: "services", href: "/services", key: 423 },
+    { name: "contact", href: "/contact", key: 424 },
   ];
 
   useEffect(() => {
@@ -118,7 +118,7 @@ export default function Nav({ children }) {
                     ? { class: "nav-link active" }
                     : { class: "nav-link" };
                 return (
-                  <li className="nav-item me-2" key={link.name}>
+                  <li className="nav-item me-2" key={link.key}>
                     <Link href={link.href}>
                       <a
                         className={activeClass.class}

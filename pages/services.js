@@ -7,7 +7,8 @@ export default function services() {
     <>
       <SEO
         title="Services"
-        description="The Anchor, Digbeth is a place of comfort to enjoy real ale, ciders, craft beers, wine, spirits and even cocktails, modern drinking in a traditional boozer."
+        description="Commercial and domestic gardening and landscaping services. Open
+            from 08:00am"
       />
       <ServicesComp />
     </>

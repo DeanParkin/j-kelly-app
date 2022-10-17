@@ -1,8 +1,47 @@
+import React from "react";
+
 export default function ServicesComp() {
+  const serviceList = [
+    {
+      name: "Gardening",
+      description: [
+        { item: "Grass Cutting", key: 1 },
+        { item: "Hedge Trimming", key: 2 },
+        { item: "Weeding", key: 3 },
+      ],
+      image: "",
+      key: 111,
+    },
+    {
+      name: "Landscaping",
+      description: [
+        { item: "Turf Laying", key: 4 },
+
+        { item: "Tree Removal", key: 5 },
+
+        { item: "Fencing", key: 6 },
+      ],
+      image: "",
+      key: 112,
+    },
+    {
+      name: "Structural",
+      description: [
+        { item: "Slabbing", key: 7 },
+
+        { item: "Drive/Patio Cleaning", key: 8 },
+
+        { item: "Sheds", key: 9 },
+      ],
+      image: "",
+      key: 113,
+    },
+  ];
+
   return (
     <>
       <div className="container text-dark pt-3 mb-2">
-        <h2 className="h2 text-primary text-center baskerville-font">
+        <h2 className="h1 text-primary text-center baskerville-font">
           Services
         </h2>
         <div className="d-flex text-center justify-content-center">
@@ -11,56 +50,33 @@ export default function ServicesComp() {
           </p>
         </div>
         <div className="row text-dark">
-          <div className="col mb-3">
-            <div className="card">
-              <img src="#" className="card-img-top" alt="..." />
-              <div className="card-body">
-                <p className="h5 card-title">Gardening</p>
-
-                <ul className="card-text">
-                  <li>Grass Cutting</li>
-                  <li>Weeding</li>
-                  <li>Hedge Trimming</li>
-                </ul>
-
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col mb-3">
-            <div className="card">
-              <img src="#" className="card-img-top" alt="..." />
-              <div className="card-body">
-                <p className="h5 card-title">Landscaping</p>
-                <ul className="card-text">
-                  <li>Turf Laying</li>
-                  <li>Tree Removal</li>
-                  <li>Fencing</li>
-                </ul>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col mb-3">
-            <div className="card">
-              <img src="#" className="card-img-top" alt="..." />
-              <div className="card-body">
-                <p className="h5 card-title">Structural</p>
-                <ul className="card-text">
-                  <li>Slabbing</li>
-                  <li>Drive/Patio Cleaning</li>
-                  <li>Sheds</li>
-                </ul>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
+          {serviceList.map((service) => {
+            return (
+              <React.Fragment key={service.key}>
+                <div className="col-sm-12 col-md-6 col-lg-4 mb-3">
+                  <div className="card border-primary">
+                    {/* <img
+                      src={service.image}
+                      className="card-img-top"
+                      alt="..."
+                    /> */}
+                    <div className="card-body">
+                      <p className="h4 card-title">{service.name}</p>
+                      <ul className="card-text">
+                        {service.description.map((item) => {
+                          console.log(item.key);
+                          return <li key={item.key}>{item.item}</li>;
+                        })}
+                      </ul>
+                      <a href="#" className="btn btn-primary">
+                        Details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </React.Fragment>
+            );
+          })}
         </div>
       </div>
     </>

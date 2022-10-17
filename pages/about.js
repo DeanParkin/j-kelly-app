@@ -1,15 +1,18 @@
 import React from "react";
-import AboutUsComp from "../components/AboutUsComp";
 import SEO from "../components/SEO";
 
 const drinks = () => {
   return (
     <>
       <SEO
-        title="Drinks"
-        description="Real and craft ales, wines, spirits, and cocktails. Traditional Thinking…Modern Drinking…"
+        title="About"
+        description="Commercial and domestic gardening and landscaping services. Open
+            from 08:00am"
       />
-      <AboutUsComp />
+      <section className="container text-center">
+        <h2 className="h1 text-primary">About Us</h2>
+        <p>J Kelly is an eco friendly local independent Gardening Company</p>
+      </section>
     </>
   );
 };
