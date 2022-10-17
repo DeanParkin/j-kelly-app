@@ -1,4 +1,8 @@
 import React from "react";
+import Image from "next/image";
+import image1 from "../public/imgs/j_kelly_services_Gardening.jpg";
+import image2 from "../public/imgs/j_kelly_services_Landscaping.jpg";
+import image3 from "../public/imgs/j_kelly_services_Structural.jpg";
 
 export default function ServicesComp() {
   const serviceList = [
@@ -9,7 +13,7 @@ export default function ServicesComp() {
         { item: "Hedge Trimming", key: 2 },
         { item: "Weeding", key: 3 },
       ],
-      image: "",
+      image: image1,
       key: 111,
     },
     {
@@ -21,7 +25,7 @@ export default function ServicesComp() {
 
         { item: "Fencing", key: 6 },
       ],
-      image: "",
+      image: image2,
       key: 112,
     },
     {
@@ -33,7 +37,7 @@ export default function ServicesComp() {
 
         { item: "Sheds", key: 9 },
       ],
-      image: "",
+      image: image3,
       key: 113,
     },
   ];
@@ -55,11 +59,11 @@ export default function ServicesComp() {
               <React.Fragment key={service.key}>
                 <div className="col-sm-12 col-md-6 col-lg-4 mb-3">
                   <div className="card border-primary">
-                    {/* <img
+                    <Image
                       src={service.image}
                       className="card-img-top"
                       alt="..."
-                    /> */}
+                    />
                     <div className="card-body">
                       <p className="h4 card-title">{service.name}</p>
                       <ul className="card-text">

@@ -90,7 +90,7 @@ export default function Nav({ children }) {
                   height={120}
                   className="navbar-brand"
                   priority={true}
-                  placeholder="blur"
+                  //placeholder="blur"
                 />
               </div>
             </Link>
