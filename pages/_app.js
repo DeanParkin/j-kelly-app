@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 //import { useRouter } from "next/router";
 import Nav from "../components/Nav";
-import Script from "next/script";
+//import Script from "next/script";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDharmachakra } from "@fortawesome/free-solid-svg-icons";
 
@@ -77,7 +77,7 @@ function MyApp({ Component, pageProps }) {
       {/* <PageLoading /> */}
       {/* <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-H9Q4C999HC"
+        src="https://www.googletagmanager.com/gtag/js?id=G-IdHere"
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
@@ -85,7 +85,7 @@ function MyApp({ Component, pageProps }) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-H9Q4C999HC');`}
+          gtag('config', 'G-IdHere');`}
       </Script> */}
 
       {/* <SiteLoader /> */}
