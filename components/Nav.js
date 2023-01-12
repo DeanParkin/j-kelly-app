@@ -17,11 +17,11 @@ export default function Nav({ children }) {
   const [navOpen, setNavOpen] = useState(false);
 
   const navItems = [
-    { name: "home", href: "/", key: 420 },
-    { name: "about", href: "/about", key: 421 },
-    { name: "gallery", href: "/gallery", key: 422 },
-    { name: "services", href: "/services", key: 423 },
-    { name: "contact", href: "/contact", key: 424 },
+    { name: "home", href: "/" },
+    { name: "about", href: "/about" },
+    { name: "gallery", href: "/gallery" },
+    { name: "services", href: "/services" },
+    { name: "contact", href: "/contact" },
   ];
 
   useEffect(() => {
@@ -113,14 +113,14 @@ export default function Nav({ children }) {
           </button>
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
-              {navItems.map((link) => {
+              {navItems.map((link, key) => {
                 let x = link.href.slice(1);
                 let activeClass =
                   x == route
                     ? { class: "nav-link active" }
                     : { class: "nav-link" };
                 return (
-                  <li className="nav-item me-2" key={link.key}>
+                  <li className="nav-item me-2" key={key}>
                     <Link
                       href={link.href}
                       className={activeClass.class}

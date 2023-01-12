@@ -3,8 +3,11 @@ import ServicesComp from "../components/ServicesComp";
 import ContactForm from "../components/ContactForm";
 import SEO from "../components/SEO";
 import AboutUsComp from "../components/AboutUsComp";
+import headerImage from "../public/imgs/j_kelly_header.png";
 import { useState } from "react";
 import Image from "next/image";
+
+const ImageCss = { maxWidth: "100%", height: "auto" };
 
 export default function Home() {
   return (
@@ -16,11 +19,11 @@ export default function Home() {
       />
       {/* <Carousel /> */}
       <header className="text-dark text-center container pt-5">
-        <h2 className="fs-5 baskerville-font">
+        <h2 className="h-2 baskerville-font">
           Welcome To <br />
-          <span className="h1 text-primary">
-            J Kelly Gardening & Landscaping Services
-          </span>
+          <div className="header-image-wrapper">
+            <Image src={headerImage} alt="..." style={ImageCss} />
+          </div>
         </h2>
         <div className="d-flex justify-content-center">
           <p className="h2 text-primary baskerville-font"></p>
