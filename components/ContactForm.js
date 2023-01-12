@@ -39,7 +39,7 @@ export default function ContactForm() {
   return (
     <>
       <div id="contactForm"></div>
-      <section className="container pt-3 mb-3">
+      <section className="container pt-5 mb-3">
         <div className="text-center">
           <h2 className="h1 text-primary baskerville-font">Contact Us</h2>
           <div className="d-flex justify-content-center">

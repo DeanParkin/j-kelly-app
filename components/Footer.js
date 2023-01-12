@@ -13,21 +13,13 @@ const Footer = () => {
   const socialIcons = [
     {
       name: "facebook link",
-      href: "#",
+      href: "https://www.facebook.com/profile.php?id=100089346244664",
       faIcon: faFacebook,
-      key: 321,
     },
     {
       name: "instagram link",
-      href: "#",
+      href: "https://www.instagram.com/jkelly_gardening_landscaping",
       faIcon: faInstagramSquare,
-      key: 322,
-    },
-    {
-      name: "twitter link",
-      href: "#",
-      faIcon: faTwitter,
-      key: 323,
     },
   ];
 
@@ -54,9 +46,9 @@ const Footer = () => {
         {/* <NewsLetter /> */}
         <div className="social-container border-top border-primary">
           <div className="container d-flex justify-content-around fs-3 align-items-center py-4">
-            {socialIcons.map((icon) => {
+            {socialIcons.map((icon, key) => {
               return (
-                <React.Fragment key={icon.key}>
+                <React.Fragment key={key}>
                   <a
                     href={icon.href}
                     target="_blank"
@@ -93,10 +85,11 @@ const Footer = () => {
             <div className="copyright-container justify-content-center text-center fs-6">
               <p className="copyright mb-1">
                 <span className="text-dark">
-                  &copy; {new Date().getFullYear()} J KELLY GARDENING. ALL
-                  RIGHTS RESERVED.
+                  &copy; 1990 - {new Date().getFullYear()} J KELLY GARDENING.
+                  ALL RIGHTS RESERVED.
                 </span>
               </p>
+              <br />
               <a
                 href="#"
                 target="_blank"

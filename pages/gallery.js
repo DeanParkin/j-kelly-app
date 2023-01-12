@@ -25,7 +25,7 @@ export default function Gallery() {
       {/* <div className="container text-center pt-3">
         <h2 className="h2 text-primary baskerville-font">Gallery</h2>
       </div> */}
-      <div className="container text-center pt-3">
+      <div className="container text-center pt-5">
         <h2 className="h1 text-primary baskerville-font">Gallery</h2>
         <p>Need Instagram Account</p>
       </div>

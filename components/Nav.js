@@ -8,6 +8,8 @@ import { useState, useEffect } from "react";
 // TODO - add the navbar logo
 // TODO - update the h1 tag
 
+const ImageCss = { maxWidth: "100%", height: "auto" };
+
 export default function Nav({ children }) {
   const route = useRouter().route.slice(1);
   const router = useRouter();
@@ -81,13 +83,12 @@ export default function Nav({ children }) {
             <h1 className="m-0">
               <span hidden={true}>J Kelly Gardening</span>
             </h1>
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <div style={{ width: "100px", height: "60px" }}>
                 <Image
                   src={logo}
                   alt="J Kelly Gardening"
-                  width={200}
-                  height={120}
+                  style={ImageCss}
                   className="navbar-brand"
                   priority={true}
                   //placeholder="blur"
@@ -120,15 +121,14 @@ export default function Nav({ children }) {
                     : { class: "nav-link" };
                 return (
                   <li className="nav-item me-2" key={link.key}>
-                    <Link href={link.href}>
-                      <a
-                        className={activeClass.class}
-                        onClick={linkClick}
-                        //aria-current={home.aria}
-                        //aria-current="page"
-                      >
-                        {link.name}
-                      </a>
+                    <Link
+                      href={link.href}
+                      className={activeClass.class}
+                      //aria-current={home.aria}
+                      //aria-current="page"
+                      onClick={linkClick}
+                    >
+                      {link.name}
                     </Link>
                   </li>
                 );

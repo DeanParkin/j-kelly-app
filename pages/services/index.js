@@ -1,6 +1,6 @@
 import React from "react";
-import ServicesComp from "../components/ServicesComp.js";
-import SEO from "../components/SEO";
+import ServicesComp from "../../components/ServicesComp";
+import SEO from "../../components/SEO";
 
 export default function services() {
   return (
