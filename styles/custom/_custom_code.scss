@@ -41,16 +41,6 @@
 //Navbar
 //================================================
 
-// .navbar-nav > li > a.nav-link {
-//   font-family: "Proxima Bold", sans-serif;
-//   font-size: 25px;
-//   //letter-spacing: 0.1em;
-//   font-weight: 700;
-//   &:hover {
-//     color: #000;
-//   }
-// }
-
 .navbar-nav > li > a.nav-link {
   font-family: "Proxima Bold";
   // color: rgba(0, 127, 0, 0.6);
@@ -60,6 +50,10 @@
   &.active {
     color: rgba(0, 127, 0, 1);
   }
+}
+
+.navbar-brand {
+  padding-top: 20px;
 }
 
 //================================================
@@ -272,9 +266,6 @@
   border-top: none;
 }
 
-.navbar-brand {
-  padding-top: 20px;
-}
 
 .header-image-wrapper {
   max-width: 700px;
